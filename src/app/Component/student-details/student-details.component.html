@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="student-details">
+<div class="container pt-5">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">{{studentDetail.first_name}} {{studentDetail.last_name}}</strong>
+            <h3 class="mb-0"></h3>
+            <div class="mb-1 text-muted"> Student Id {{studentDetail.id}}</div>
+            <p class="card-text mb-auto">{{studentDetail.email}}</p>
+           
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img [src]="studentDetail.avatar" class="rounded-circle" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+
+</div>
+
+

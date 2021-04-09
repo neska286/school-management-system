@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="table-section-allStudents pt-5">
+    <div class="container">
+        <h2 class="pb-5">All students records</h2>
+<table class="table">
+    <thead>
+      <tr class="text-center header">
+        <th scope="col">id</th>
+        <th scope="col">email</th>
+        <th scope="col">first_name</th>
+        <th scope="col">last_name</th>
+        <th scope="col">avatar</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let student of students | paginate:{itemsPerPage:3, currentPage:p};" class="text-center" >
+       <td >{{student.id}}</td>
+        <td >{{student.email}}</td>
+        <td >{{student.first_name}}</td>
+        <td >{{student.first_name}}</td>
+        <td > <img [src]="student.avatar" class="rounded-circle" alt="..."></td>
+        <td><a [routerLink]="['/student-details',student.id]">View Details</a></td>
+       
+        </tr>
+       
+    </tbody>
+  </table>
+  <pagination-controls 
+  (pageChange)="p = $event"
+  ></pagination-controls>
+</div>
+</div>

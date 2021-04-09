@@ -1,0 +1,15 @@
+a {
+    color: #C97F32;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #C97F32 !important;
+    color: #fefefe;
+    cursor: default;
+}
+.header{
+    color:#2F3F67;
+}
